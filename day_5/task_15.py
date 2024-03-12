@@ -7,16 +7,12 @@
 # Then, the output should be:
 #
 # 11106
-# 9 + 99 + 999
-digit = "9"
-r = range(4)
-l = []
-for a in r:
-    a *= a
-    l.append(digit)
-    a *= l
+list_of_values = []
 
-print(l)
-    # l.append(digit)
-    # print(digit)
-# for digit in
+user_num = input("Please, enter your number: ")
+for i in range(1, 5):
+    values = int(i * user_num)
+    list_of_values.append(values)
+
+
+print(sum(list_of_values))
