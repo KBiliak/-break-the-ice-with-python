@@ -18,15 +18,15 @@ choosing:1
 or:2
 to:1"""
 
-row = "New to Python or choosing between Python 2 and Python 3? Read Python " \
-      "2 or Python 3.".split(" ")
+row = input().split(" ")
 row = sorted(row)
-empty_dict = {}
+word_count = {}
 
 
 for word in row:
-    empty_dict.keys()
-    print(word, row.count(word))
+    word_count[word] = word_count.get(word, 0) + 1
 
+for word, count, in word_count.items():
+    print(word, count)
 
 
